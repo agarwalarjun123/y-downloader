@@ -12,7 +12,7 @@ rp('https://www.googleapis.com/youtube/v3/search?part=snippet&q='+song+'&key='+k
   var vid=data["items"][0]["id"]["videoId"];
   resolve(vid);
 })
-.catch((err)=>{
+.catch((err)=>{gi
   reject(err);
 });
 });
