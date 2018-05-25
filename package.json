@@ -1,0 +1,26 @@
+{
+  "name": "web-scraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webscrap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arjun agarwal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.0.17",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3",
+    "puppeteer": "^1.4.0",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}
