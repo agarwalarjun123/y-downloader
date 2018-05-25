@@ -25,7 +25,7 @@ await page._client.send('Page.setDownloadBehavior', {behavior: 'allow', download
 await page.goto("http://ssyoutube.com/watch?v="+id);
 await page.click(".download-icon");
 }
-fetchvideo("Be intehaan")
+fetchvideo("#videoname")
 .then((watchid)=>{
 console.log(watchid);
 return downloadvideo(watchid);
@@ -37,25 +37,3 @@ return downloadvideo(watchid);
 .catch((err)=>{
 console.log(err);
 });
-
-
-
-// function youpost(){
-//   return new Promise(function(resolve, reject) {
-//     rp("http://youtube.com/results?search_query=ae+Watan")
-//     .then((data)=>{
-//       var $=cheerio.load(data);
-//       var url= $("div.ytd-app:nth-child(13)").attr("id");
-//       console.log(url);
-//     })
-//     .catch((err)=>{
-//       console.log(err);
-//     });
-//   });
-// }
-// youpost()
-// .then((url)=>{
-// console.log(url);
-//
-//
-//   });
