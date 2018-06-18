@@ -18,5 +18,11 @@ var download={
   path:PathDirectory,
   google_key:google_api_key
 }
-ydl(download).then()
+ydl(download)
+.then((msg)=>{
+  console.log(msg);
+  })
+.catch((err)=>{
+  console.log(err);
+  });
 ```

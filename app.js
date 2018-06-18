@@ -1,6 +1,5 @@
 //npm function to be exported
 const ydownload= require('./youtubedownload');
-const key=require("./key");
 function ydl(vd){
   return new Promise(function(resolve, reject) {
     ydownload.fetch(vd.name,vd.google_key)

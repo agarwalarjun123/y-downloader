@@ -1,7 +1,6 @@
 
 const rp = require('request-promise');
 const puppeteer =require('puppeteer');
-const key=require('./key');
 const fs=require('fs');
 
 function fetchvideo(song,GOOGLE_API_key){
@@ -20,7 +19,7 @@ rp('https://www.googleapis.com/youtube/v3/search?part=snippet&q='+song+'&key='+G
 }
 //puppeteer script
 async function downloadvideo(title,id,path){
-const browser=await puppeteer.launch({headless:false});
+const browser=await puppeteer.launch();
 const page=await browser.newPage();
 await page._client.send('Page.setDownloadBehavior', {behavior: 'allow', downloadPath:path});
 await page.goto("http://ssyoutube.com/watch?v="+id);
