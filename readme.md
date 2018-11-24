@@ -11,7 +11,7 @@ The node module works well with Promises
 
 How to use the package?
 
-```
+```js
 var ydl=require('y-downloader');
 var download={
   name:videoName,
